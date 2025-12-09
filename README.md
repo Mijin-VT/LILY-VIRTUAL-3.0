@@ -1,3 +1,5 @@
+
+
 # 🌸 LILY AI COMPAÑERA VIRTUAL 🌸
 
 Lily AI compañera virtual de IA con inteligencia emocional para Windows 10
@@ -34,7 +36,7 @@ Lily AI compañera virtual de IA con inteligencia emocional para Windows 10
 - **Baja latencia**: Respuesta más rápida que servicios en línea
 - Compatible con español nativo
 
-### 🎵 Control de YouTube y Medios (NUEVO)
+### 🎵 Control de YouTube y Medios
 - **Reproducción de música por voz**: "Pon música de [artista]"
 - **Control de reproducción**: Pausa, siguiente, anterior
 - **Control de volumen**: Sube, baja y silencia por voz
@@ -238,7 +240,7 @@ El archivo `requirements.txt` incluye todas las bibliotecas necesarias:
 **Wake Word**: Di "**LILY**" para activarla
 
 **Comandos de Música**:
-- "Pon música de Bad Bunny"
+- "Pon música de Juan Gabriel"
 - "Reproduce Shakira"
 - "Play Queen"
 
@@ -380,7 +382,7 @@ Documentación interactiva disponible en: `http://127.0.0.1:8000/docs`
 ## 🔒 Privacidad
 
 - **Todas las conversaciones se almacenan localmente** en tu computadora
-- **No se envía información a servidores externos** excepto para TTS (gTTS usa Google)
+- **No se envía información a servidores externos** 
 - **El modelo de IA se ejecuta completamente en tu máquina**
 - **Reconocimiento de voz 100% offline** con Vosk (no se envían datos a Google)
 - **Wake word completamente local**: Sin dependencia de servicios externos
@@ -410,15 +412,14 @@ Editar `models/tts_engine.py`, diccionario `voice_params`
 - Editar `models/system_prompt.txt`
 - Buscar la línea: `- Usas mexicanismos y modismos cuando es apropiado`
 - Puedes cambiarlo por:
-  - Brasileñismos
-  - Argentinismos
-  - Ecuatorianismos
-  - Chilenismos
-  - Colombianismos
-  - Bolivianismos
-  - Peruanismos
-  - Venezolanismos
-  - Anglicismos
+  - brasileñismos
+  - argentinismos
+  - ecuatorianismos
+  - chilenismos
+  - colombianismos
+  - bolivianismos
+  - peruanismos
+  - venezolanismos
   - O cualquier otro regionalismo que prefieras
 
 ## 📝 Notas Técnicas
@@ -436,7 +437,7 @@ Editar `models/tts_engine.py`, diccionario `voice_params`
 - Carga automática al iniciar
 
 ### Texto a Voz
-- Motor base: gTTS (Google Text-to-Speech)
+- Motor base: TTS (TTSEngine)
 - Procesamiento: pydub para modulación emocional
 - Formato: MP3, 128kbps
 - Limpieza automática de archivos antiguos
@@ -451,11 +452,25 @@ Si encuentras problemas:
 
 ## 📜 Licencia
 
-Este proyecto es de uso personal y educativo.
+Este proyecto está bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
-## 🎉 ¡Disfruta de Lily!
-
+## 📜 Nota 
 Lily está diseñada para ser tu compañera virtual sin restricciones. Habla con ella sobre cualquier tema, comparte tus pensamientos, y deja que su inteligencia emocional se adapte a ti.
 
+En models\system_prompt.txt en la linea (- Siempre llamas al usuario "Mijin".) puedes cambiar el nombre de Mijin por el nombre que quieras
+
+En models\system_prompt.txt en la linea (- Usas mexicanismos y modismos cuando es apropiado) puedes cambiarlo por argentinismos, ecuatorianismos, 
+Argentinismo, chilenismo, colombianismo, bolivianismo, peruanismo, etc.
+
+El archivo INICIAR_LILY.bat sirve para iniciar el proyecto LILY VIRTUAL 3.0
+
+En el archivo INICIAR_LILY.bat en la linea 22 (set PYTHON_PATH=C:\Users\MIJIN\AppData\Local\Programs\Python\Python313\python.exe) cambia MIJIN por el nombre el del usuario del sistema Windows
+
+En el archivo INICIAR_LILY.bat en la linea 31 (echo 2. Asegurate que esta en C:\Users\MIJIN\AppData\Local\Programs\Python\Python313\) cambia MIJIN por el nombre el del usuario del sistema Windows
+
+## 🎉 ¡Disfruta de Lily!
 **¡Que tengas excelentes conversaciones con Lily! 💕**
+
+LilyBell, muchas gracias por ser mi inspiración para este proyecto 🥰
+
 
